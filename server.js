@@ -10,22 +10,9 @@ app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "index.html"))
 })
 
-// app.post("/login", (req, res) => {
-//     const {password} = req.body
-//     const passwordReal = process.env.CLAVE_SECRETA
-//     if(password === passwordReal){
-//         res.send("Contraseña aceptada")
-//     }
-//     else{
-//         res.send("Acceso denegado")
-//     }
-
-//     res.end()
-// })
-
 app.post("/login", (req, res) => {
     const body = req.body
-    console.log(body)
+
 
     res.end()
 })
